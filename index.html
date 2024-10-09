@@ -6,8 +6,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Rede social</title>
 </head>
-<body>
-    <header>
+<body> <script type="module" src="graficos/quantidadeUsuarios.js"></script>
+    <header> const url = 'https://raw.githubusercontent.com/guilhermeomrails/api/main/numero-usuarios.json'
+        const res = await fetch(url)
+        const dados = await res.json()
+        const nomeDasRedes = Object.keys(dados)
+        const quantidadeUsuarios = Object.values(dados)
+      
+      }
         <h1>Relatório das redes sociais</h1>
         <nav>
                 <a href="index.html">Mundo</a>
@@ -26,5 +32,7 @@
 </footer>
 
 <script src="graficos/informacoesGlobais.js"></script>
-</body>
+</body> const url = 'https://raw.githubusercontent.com/guilhermeomrails/api/main/numero-usuarios.json'
+const res = await fetch(url)
+const dados = await res.json()
 </html>
